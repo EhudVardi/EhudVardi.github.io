@@ -21,6 +21,20 @@ body
 	max-width: 1000px;
 	min-height: 100px;
 	background: #fff;
+	display: grid;
+	grid-template-columns: 1fr 2fr 
+}
+.left_Side
+{
+	position: relative;
+	background: #003147;
+	padding: 40px;
+}
+.right_Side
+{
+	position: relative;
+	background: #fff;
+	padding: 40px;
 }
 
 
