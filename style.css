@@ -26,22 +26,17 @@ body
 	grid-template-columns: 1fr 2fr;
 	box-shadow: 0 35px 35px rgba(0,0,0,0.1);
 }
-.left_Side
+.container .left_Side
 {
 	position: relative;
 	background: #003147;
 	padding: 40px;
 }
-.right_Side
+.container .right_Side
 {
 	position: relative;
 	background: #fff;
 	padding: 40px;
-}
-.profile_image
-{
-	width: 100%;
-	height: 100%;
 }
 
 
