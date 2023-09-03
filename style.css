@@ -108,6 +108,25 @@ body
 	color: #fff;
 	font-weight: 300;
 }
+.contactInfo.education li
+{
+	margin-bottom: 15px;
+}
+.contactInfo.education h5
+{
+	color: #03a9f4;
+	font-weight: 500;
+}
+.contactInfo.education h4:nth-child(2)
+{
+	color: #fff;
+	font-weight: 500;
+}
+.contactInfo.education h4
+{
+	color: #fff;
+	font-weight: 300;
+}
 .container .right_Side
 {
 	position: relative;
