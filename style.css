@@ -95,6 +95,7 @@ body
 	list-style: none;
 	margin: 10px 0;
 	cursor: pointer;
+	min-width: 295px;
 }
 .contactInfo ul li .icon
 {
