@@ -1,6 +1,6 @@
 var link_phone = "+972 52 420 5851";
 var link_email = "ehud8vardi@gmail.com";
-var link_homepage = "https://www.ehudvardi.github.io";
+var link_homepage = "http://ehudvardi.github.io";
 var link_linkedin = "https://www.linkedin.com/in/ehudvardi";
 var link_location = "Ra'anana, IL";
 
@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded", function() {
 			});
 			break; 
 		case "homepage":
-			elementC.textContent = link_homepage.replace("https://www.","");
+			elementC.textContent = link_homepage.replace("http://","");
 			elementC.addEventListener("click", function() {
 				window.open(link_homepage, "_blank");
 			});
