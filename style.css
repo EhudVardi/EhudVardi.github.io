@@ -5,6 +5,7 @@
 	padding: 0;
 	box-sizing: border-box;
 	font-family: 'Poppins', sans-serif;
+	caret-color: transparent;
 	/*border-style: outset;
 	border-width: 3px; for debug view*/
 }
