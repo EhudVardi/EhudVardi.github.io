@@ -68,8 +68,10 @@ body
 	margin-top: 20px;
 	text-transform: uppercase;
 	text-align: center;
-	font-weight: 600;
+	font-weight: 700;
 	line-height: 1.4em;
+	
+	text-shadow: 2px 1px 2px black;
 }
 .profileText h2 span
 {
@@ -195,6 +197,10 @@ p
 	text-transform: uppercase;
 	color: #2a7da2;
 	font-size: 16px;
+}
+.about .box .text p
+{
+	line-height: 1.2;
 }
 .skills .box
 {
