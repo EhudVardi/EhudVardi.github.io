@@ -243,14 +243,15 @@ p
 .interest ul
 {
 	display: grid;
-	grid-template-columns: repeat(3,1fr);
+	grid-template-columns: repeat(2,1fr);
 }
 .interest ul li
 {
 	list-style: none;
-	color: #333;
+	color: #eee;
 	font-weight: 500;
 	margin: 10px 0;
+	min-width: 100px;
 }
 .interest ul li .fa
 {
@@ -268,7 +269,7 @@ p
 	}
 	.interest ul
 	{
-		grid-template-columns: repeat(2,1fr);
+		grid-template-columns: repeat(3,1fr);
 	}
 }
 
@@ -284,7 +285,7 @@ p
 	}
 	.interest ul
 	{
-		grid-template-columns: repeat(1,1fr);
+		grid-template-columns: repeat(2,1fr);
 	}
 	.skills .box
 	{
