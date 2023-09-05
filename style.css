@@ -173,6 +173,10 @@ body
 {
 	margin-bottom: 0;
 }
+.about p
+{
+	margin-bottom: 6px;
+}
 .title2nd
 {
 	color: #003147;
