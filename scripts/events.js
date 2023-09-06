@@ -55,7 +55,7 @@ document.addEventListener("DOMContentLoaded", function() {
 	var container = document.querySelector('.experience');
 	
 	expandButton.addEventListener('click', function () {
-		expandButton.textContent = (expandButton.textContent.includes("Expand") ? " Click To Retract " : " Click To Expand ");
+		expandButton.textContent = (expandButton.textContent.includes("Expand") ? " Click To Collapse " : " Click To Expand ");
 		container.classList.toggle('expanded');
 	});
 	
