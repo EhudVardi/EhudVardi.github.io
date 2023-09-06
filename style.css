@@ -212,8 +212,21 @@ p
 }
 .about .box .text p
 {
-	line-height: 1.2;
+	line-height: 1.3;
 }
+.about .box .text ul li
+{
+	margin-left: 12px;
+	padding-left: 3px;
+}
+.about .box .text ul li::marker 
+{
+	content: '+';
+	font-size: 1.2em;
+	font-weight: 700;
+	color: #2a7da2;
+}
+
 .skills .box
 {
 	position: relative;
