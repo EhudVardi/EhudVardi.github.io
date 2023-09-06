@@ -9,6 +9,19 @@
 	/*border-style: outset;
 	border-width: 3px; for debug view*/
 }
+:root { /* Define a CSS variable   var(--color-themeDarker); */ 
+  --color-white: rgba(255, 255, 255, 1);
+  --color-black: rgba(0, 0, 0, 1);
+  --color-lightgray: rgba(238, 238, 238, 1);
+  --color-darkgray: rgba(72, 72, 72, 1);
+  --color-mainbackground: rgba(3, 169, 244, 0.8);
+  --color-mainforeground: rgba(0, 128, 255, 0.8);
+  --color-themeDarker: rgba(10, 49, 71, 1);
+  --color-themeDark: rgba(0, 72, 132, 1);
+  --color-themeRegular: rgba(42, 125, 162, 1);
+  --color-themeLight: rgba(132, 140, 144, 1);
+  --color-themeLighter: rgba(0, 128, 255, 1);
+}
 body
 {
 	background: lightblue;
@@ -32,7 +45,7 @@ body
 .container .left_Side
 {
 	position: relative;
-	background: #003147;
+	background: var(--color-themeDarker);
 	padding: 40px;
 }
 .profileText
@@ -65,7 +78,7 @@ body
 }
 .profileText h2
 {
-	color: #fff;
+	color: var(--color-white);
 	font-size: 1.5em;
 	margin-top: 20px;
 	text-transform: uppercase;
@@ -86,7 +99,7 @@ body
 }
 .title
 {
-	color: #fff;
+	color: var(--color-white);
 	text-transform: uppercase;
 	font-weight: 600;
 	letter-spacing: 1px;
@@ -109,16 +122,16 @@ body
 	display: inline-block;
 	width: 30px;
 	font-size: 18px;
-	color: #03a9f4;
+	color: var(--color-mainbackground);
 }
 .contactInfo ul li span
 {
-	color: #fff;
+	color: var(--color-white);
 	font-weight: 300;
 }
 .contactInfo ul li span.link
 {
-	color: #eee;
+	color: var(--color-lightgray);
 	font-weight: 400;
 	text-decoration: underline;
 }
@@ -128,17 +141,17 @@ body
 }
 .contactInfo.education h5
 {
-	color: #03a9f4;
+	color: var(--color-mainbackground);
 	font-weight: 500;
 }
 .contactInfo.education h4:nth-child(2)
 {
-	color: #fff;
+	color: var(--color-white);
 	font-weight: 500;
 }
 .contactInfo.education h4
 {
-	color: #fff;
+	color: var(--color-white);
 	font-weight: 300;
 }
 .contactInfo.languages .percent
@@ -179,14 +192,14 @@ body
 }
 .title2nd
 {
-	color: #003147;
+	color: var(--color-themeDark);
 	text-transform: uppercase;
 	letter-spacing: 1px;
 	margin-bottom: 10px;
 }
 p
 {
-	color: #333;
+	color: var(--color-darkgray);
 }
 .experience
 {
@@ -204,15 +217,14 @@ p
     display: flex;
     margin-top: 10px; /* Adjust the margin as needed */
 	margin-bottom: 50px;
-    color: #03a9f4;
+    color: var(--color-mainbackground);
 	margin-left: 40%;
-    background-color: #fff;
+    background-color: var(--color-white);
 	font-weight: 600;
 	border-width : 0;
 }
 .expandButton:hover { /* Hover effect */
-    background-color: #eee; 
-    color: #000;
+    color: var(--color-themeDarker);
 }
 @keyframes expand { /* Expand animation */
     0% {
@@ -237,13 +249,13 @@ p
 .about .box .year_company h5
 {
 	text-transform: uppercase;
-	color: #848c90;
+	color: var(--color-darkgray);
 	font-weight: 600;
 }
 .about .box .text h4
 {
 	text-transform: uppercase;
-	color: #2a7da2;
+	color: var(--color-themeRegular); 
 	font-size: 16px;
 }
 .about .box .text p
@@ -260,7 +272,7 @@ p
 	content: '+';
 	font-size: 1.2em;
 	font-weight: 700;
-	color: #2a7da2;
+	color: var(--color-themeRegular); 
 }
 .skills .box
 {
@@ -274,7 +286,7 @@ p
 .skills .box h4
 {
 	text-transform: uppercase;
-	color: #848c99;
+	color: var(--color-themeDark);
 	font-weight: 500;
 }
 .skills .box .percent
@@ -300,14 +312,14 @@ p
 .interest ul li
 {
 	list-style: none;
-	color: #eee;
+	color: var(--color-lightgray);
 	font-weight: 500;
 	margin: 10px 0;
 	min-width: 100px;
 }
 .interest ul li .fa
 {
-	color: #03a9f4;
+	color: var(--color-mainbackground);
 	font-size: 18px;
 	width: 20px;
 }
