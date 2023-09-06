@@ -226,7 +226,6 @@ p
 	font-weight: 700;
 	color: #2a7da2;
 }
-
 .skills .box
 {
 	position: relative;
@@ -290,7 +289,7 @@ p
 	}
 }
 
-@media (max-width: 600px)
+@media (max-width: 700px)
 {
 	.about .box
 	{
