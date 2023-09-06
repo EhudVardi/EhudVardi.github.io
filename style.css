@@ -188,6 +188,42 @@ p
 {
 	color: #333;
 }
+.experience
+{
+	max-height: 470px;
+	overflow: hidden;
+	transition: max-height 0.3s ease-in-out;
+	margin-bottom: 0; /* override sections margin to accomodate the button */
+}
+.expanded {
+    max-height: 2000px; /* Expand to show all content (adjust as needed) */
+    transition: max-height 0.3s ease-in-out; /* Smooth transition animation for container */
+    animation-fill-mode: forwards; /* Prevent animation from resetting */
+}
+.expandButton {
+    display: flex;
+    margin-top: 10px; /* Adjust the margin as needed */
+	margin-bottom: 50px;
+    color: #03a9f4;
+	margin-left: 40%;
+    background-color: #fff;
+	font-weight: 600;
+	border-width : 0;
+}
+.expandButton:hover { /* Hover effect */
+    background-color: #eee; 
+    color: #000;
+}
+@keyframes expand { /* Expand animation */
+    0% {
+        opacity: 0;
+        max-height: 200px; /* Start from the fixed height */
+    }
+    100% {
+        opacity: 1;
+        max-height: 1000px; /* Expand to full height */
+    }
+}
 .about .box
 {
 	display: flex;

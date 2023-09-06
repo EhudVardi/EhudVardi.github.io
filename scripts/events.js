@@ -49,5 +49,13 @@ document.addEventListener("DOMContentLoaded", function() {
 			console.log(`default`);
 		}
     }
+	
+	// Expand button click event registration
+	var expandButton = document.getElementById("expandButtonId");
+	var container = document.querySelector('.experience');
+	
+	expandButton.addEventListener('click', function () {
+		container.classList.toggle('expanded');
+	});
+	
 });
-
