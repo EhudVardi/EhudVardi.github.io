@@ -57,7 +57,7 @@ document.addEventListener("DOMContentLoaded", function() {
 		expandButton.addEventListener('click', function () {
 			var targetBtn = event.target;
 			var expandableElement = targetBtn.previousElementSibling;
-			targetBtn.textContent = (targetBtn.textContent.includes("Expand") ? " Click To Collapse " : " Click To Expand ");
+			targetBtn.textContent = (targetBtn.textContent.includes("Expand") ? "Collapse" : "Expand");
 			expandableElement.classList.toggle('expanded');
 		});
 	}
