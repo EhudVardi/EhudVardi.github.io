@@ -50,13 +50,17 @@ document.addEventListener("DOMContentLoaded", function() {
 		}
     }
 	
-	// Expand button click event registration
-	var expandButton = document.getElementById("expandButtonId");
-	var container = document.querySelector('.experience');
+	//All expand buttons click event registration
+	var expandButtons = document.getElementsByClassName("expandButton");
+	for (let i = 0; i < expandButtons.length; i++) {
+		var expandButton = expandButtons[i];
+		expandButton.addEventListener('click', function () {
+			var targetBtn = event.target;
+			var expandableElement = targetBtn.previousElementSibling;
+			targetBtn.textContent = (targetBtn.textContent.includes("Expand") ? " Click To Collapse " : " Click To Expand ");
+			expandableElement.classList.toggle('expanded');
+		});
+	}
 	
-	expandButton.addEventListener('click', function () {
-		expandButton.textContent = (expandButton.textContent.includes("Expand") ? " Click To Collapse " : " Click To Expand ");
-		container.classList.toggle('expanded');
-	});
 	
 });

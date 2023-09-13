@@ -203,9 +203,16 @@ p
 }
 .experience
 {
-	max-height: 470px;
+	max-height: 2000px;
+}
+.exp
+{
+	display: flex;
+	flex-direction: row;
+	max-height: 100px;
 	overflow: hidden;
 	transition: max-height 0.3s ease-in-out;
+	margin: 20px 0;
 	margin-bottom: 0; /* override sections margin to accomodate the button */
 }
 .expanded {
@@ -236,38 +243,32 @@ p
         max-height: 1000px; /* Expand to full height */
     }
 }
-.about .box
-{
-	display: flex;
-	flex-direction: row;
-	margin: 20px 0;
-}
-.about .box .year_company
+.exp .year_company
 {
 	min-width: 150px;
 }
-.about .box .year_company h5
+.exp .year_company h5
 {
 	text-transform: uppercase;
 	color: var(--color-darkgray);
 	font-weight: 600;
 }
-.about .box .text h4
+.exp .text h4
 {
 	text-transform: uppercase;
 	color: var(--color-themeRegular); 
 	font-size: 16px;
 }
-.about .box .text p
+.exp .text p
 {
 	line-height: 1.3;
 }
-.about .box .text ul li
+.exp .text ul li
 {
 	margin-left: 12px;
 	padding-left: 3px;
 }
-.about .box .text ul li::marker 
+.exp .text ul li::marker 
 {
 	content: '+';
 	font-size: 1.2em;
