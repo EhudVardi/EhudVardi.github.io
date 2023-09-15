@@ -209,7 +209,7 @@ p
 {
 	display: flex;
 	flex-direction: row;
-	max-height: 70px;
+	max-height: 80px;
 	overflow: hidden;
 	transition: max-height 0.3s ease-in-out;
 	margin: 20px 0;
@@ -245,7 +245,7 @@ p
 }
 .exp .year_company
 {
-	min-width: 150px;
+	min-width: 130px;
 }
 .exp .year_company h5
 {
