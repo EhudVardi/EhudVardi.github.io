@@ -209,7 +209,7 @@ p
 {
 	display: flex;
 	flex-direction: row;
-	max-height: 80px;
+	max-height: 86px;
 	overflow: hidden;
 	transition: max-height 0.3s ease-in-out;
 	margin: 20px 0;
