@@ -135,6 +135,27 @@ body
 	font-weight: 400;
 	text-decoration: underline;
 }
+.contactInfo ul li .contactInfo_link_tooltip {
+    position: absolute;
+    bottom: 125%; /* Tooltip appears above the container */
+    left: 50%; /* Tooltip is aligned to the center */
+    margin-left: -75px; /* Adjust to center horizontally (half of tooltip width) */
+    visibility: hidden;
+    background-color: var(--color-mainbackground);
+    color: #fff;
+    padding: 5px;
+    border-radius: 6px;
+    width: auto; /* Tooltip width */
+    text-align: center;
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.contactInfo ul li:hover .contactInfo_link_tooltip {
+    visibility: visible;
+    opacity: 1;
+}
 .contactInfo.education li
 {
 	margin-bottom: 15px;
