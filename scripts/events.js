@@ -1,4 +1,5 @@
 var link_phone = "+972 52 420 5851";
+var link_phone_whatsapp = "https://web.whatsapp.com/send/?phone=972524205851";
 var link_email = "ehud8vardi@gmail.com";
 var link_homepage = "http://ehudvardi.github.io";
 var link_github = "https://github.com/EhudVardi";
@@ -19,7 +20,7 @@ document.addEventListener("DOMContentLoaded", function() {
 		case "phone":
 			elementC.textContent = link_phone;
 			elementC.addEventListener("click", function() {
-				// alert("phone");
+				window.open(link_phone_whatsapp, "_blank")
 			});
 			break; 
 		case "email":
