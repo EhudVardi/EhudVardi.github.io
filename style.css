@@ -253,6 +253,12 @@ p
 	color: var(--color-darkgray);
 	font-weight: 600;
 }
+.exp .year_company .company_name
+{
+	text-transform: none;
+	font-weight: bold;
+	font-style: italic;
+}
 .exp .text h4
 {
 	text-transform: uppercase;
